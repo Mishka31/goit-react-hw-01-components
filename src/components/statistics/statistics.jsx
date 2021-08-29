@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import "./statistics.css";
+import s from "./statistics.module.css";
 
 function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul>
+    <section className={s.section}>
+      <h2 className={s.header}>{title}</h2>
+      <ul className={s.container}>
         {stats.map((s) => (
           <li key={s.id} className="item">
             <span className="label">{s.label}</span>
