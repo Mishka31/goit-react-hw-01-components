@@ -1,3 +1,7 @@
+.friends {
+  display: grid;
+  justify-content: center;
+}
 .avatar1 {
   display: block;
   margin-right: auto;
@@ -6,7 +10,7 @@
   border: 1px solid rgb(207, 207, 255);
   border-radius: 50%;
 }
-.friend-list {
+.friendList {
   list-style-type: none;
   display: flex;
 }
@@ -23,4 +27,9 @@
   height: 20px;
   border-radius: 50%;
   background-color: rgb(255, 145, 0);
+}
+.name {
+  display: grid;
+  justify-content: center;
+  font-weight: 700;
 }
