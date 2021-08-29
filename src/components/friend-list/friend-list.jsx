@@ -2,8 +2,9 @@ import PropTypes from "prop-types";
 import "./friend-list.css";
 
 function FriendList({ friends }) {
+  // friends.avatar = defLogo
   return (
-    <section className="statistics">
+    <section className="friends">
       <ul className="friend-list">
         {friends.map((f) => (
           <li key={f.id} className="item">
