@@ -8,8 +8,8 @@ function FriendList({ friends }) {
         {friends.map((f) => (
           <li key={f.id} className={s.item}>
             <span className={String(f.isOnline)} />
-            <img className="avatar1" src={f.avatar} alt={f.name} width="48" />
-            <p className="name">{f.name}</p>
+            <img className={s.avatar1} src={f.avatar} alt={f.name} width="48" />
+            <p className={s.name}>{f.name}</p>
           </li>
         ))}
       </ul>

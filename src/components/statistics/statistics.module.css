@@ -30,7 +30,6 @@
 .itemList {
   width: 100%;
   display: grid;
-  border: 1px solid teal;
   justify-items: center;
 }
 .label {

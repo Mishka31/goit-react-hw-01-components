@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import defLogo from "./default.png"; //для примера
-import "./profile.css";
+import s from "./profile.module.css";
 
 export default function Profile({
   imageUrl = defLogo, //знаю что не обязательно, один раз попробовать))
@@ -10,25 +10,25 @@ export default function Profile({
   stats,
 }) {
   return (
-    <div className="profile">
+    <div className={s.profile}>
       <div className="description">
-        <img src={imageUrl} alt={tag} className="avatar" />
-        <p className="name">{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <img src={imageUrl} alt={tag} className={s.avatar} />
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
-      <ul className="stats">
-        <li className="containerStats first">
-          <span className="label">Followers</span>
-          <span className="quantity"> {stats.followers}</span>
+      <ul className={s.stats}>
+        <li className={s.containerStats + " " + s.first}>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}> {stats.followers}</span>
         </li>
-        <li className="containerStats second">
-          <span className="label">Views</span>
-          <span className="quantity"> {stats.views}</span>
+        <li className={s.containerStats + " " + s.second}>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}> {stats.views}</span>
         </li>
-        <li className="containerStats third">
-          <span className="label">Likes</span>
-          <span className="quantity"> {stats.likes}</span>
+        <li className={s.containerStats + " " + s.third}>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}> {stats.likes}</span>
         </li>
       </ul>
     </div>

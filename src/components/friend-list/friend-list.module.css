@@ -3,33 +3,29 @@
   justify-content: center;
 }
 .avatar1 {
+  margin-right: 8px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 70px;
-  border: 1px solid rgb(207, 207, 255);
-  border-radius: 50%;
+  width: 50px;
+  border-radius: 8%;
 }
 .friendList {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  display: flex;
-}
-.true {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: rgb(0, 255, 0);
-}
-.false {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: rgb(255, 145, 0);
 }
 .name {
   display: grid;
   justify-content: center;
   font-weight: 700;
+}
+.item {
+  background: white;
+  margin-top: 10px;
+  min-width: 160px;
+  /* border: 1px solid rgb(207, 207, 255); */
+  display: flex;
+  padding: 5px;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
