@@ -5,7 +5,7 @@ function Statistics({ title, stats }) {
   const colors = () => "#" + (Math.random().toString(16) + "000000").substring(2, 8).toUpperCase();
   return (
     <section className={s.section}>
-      <h2 className={s.header}>{title}</h2>
+      {title && <h2 className={s.header}>{title}</h2>}
       <ul className={s.container}>
         {stats.map((stat) => (
           <li key={stat.id} className={s.itemList} style={{ backgroundColor: colors() }}>

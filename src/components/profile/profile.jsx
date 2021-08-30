@@ -5,7 +5,7 @@ import s from "./profile.module.css";
 export default function Profile({
   imageUrl = defLogo, //знаю что не обязательно, один раз попробовать))
   tag,
-  name = "не известно", //для примера
+  name = "", //для примера
   location,
   stats,
 }) {

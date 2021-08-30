@@ -1,5 +1,5 @@
 // import "./App.css";
-import Frofile from "./components/profile/profile";
+import Profile from "./components/profile/profile";
 import user from "./components/profile/user.json";
 import Statistics from "./components/statistics/statistics";
 import statJson from "./components/statistics/statistical-data.json";
@@ -11,8 +11,9 @@ import TransactionsJson from "./components/transaction-history/transactions.json
 export default function App() {
   return (
     <div className="App">
-      <Frofile imageUrl={user.avatar} name={user.name} tag={user.tag} location={user.location} stats={user.stats} />
+      <Profile imageUrl={user.avatar} name={user.name} tag={user.tag} location={user.location} stats={user.stats} />
       <Statistics title="Upload stats" stats={statJson} />
+      {/* <Statistics stats={statJson} /> */}
       <FriendList friends={friends} />
       <TransactionHistory items={TransactionsJson} />
     </div>

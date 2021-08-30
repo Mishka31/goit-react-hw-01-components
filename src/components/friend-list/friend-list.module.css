@@ -29,3 +29,21 @@
   align-items: center;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+.onlineFriend {
+  margin-left: 5px;
+  margin-right: 8px;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(0, 255, 0);
+}
+.offlineFriend {
+  margin-left: 5px;
+  margin-right: 8px;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 72, 0);
+}
